@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Alarm Clock</title>
+    <link rel = "stylesheet" href = "style.css" />
+
+</head>
+
+<body>
+   
+    <div class="">
+      <div class="container">
+        <img src="./files/alarm-clock.png" alt="">
+        <div class="time" id= "current-time"></div>
+        <form class="set-alarm-container">
+          <select class="set-alarm-component" name="hours" id="hours" required></select>
+          <select class="set-alarm-component" required name="minutes" id="minutes"></select>
+          <select class="set-alarm-component" required name="seconds" id="seconds"></select>
+          <select class="set-alarm-component" required name="am-pm" id="am-pm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+          <button class="set-alarm-component" id="setAlarm" type="submit">Set Alarm</button>
+        </form>
+          <div class="alarms" id="alarms-container"></div>
+        
+      </div>
+    </div>
+
+   
+    <script src="./script.js"></script>
+  </body>
+</html>
+</html>

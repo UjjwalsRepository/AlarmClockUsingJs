@@ -1,0 +1,95 @@
+/* GLobal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  .container{
+    width: 550px;
+    padding: 30px 30px 38px;
+    background: #4c9aad;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 10%);
+    margin: auto;
+    /* background: linear-gradient(135deg,#); */
+  }
+  img{
+    width: 90px;
+    position: relative;
+    left: 40%;
+  
+  }
+  .time{
+    font-size: 75px;
+    font-weight: 500;
+    margin: 30px 15px;
+    color: #04f8a6;
+  }
+  .set-alarm-container{
+    display: flex;
+    width: 100%;
+  }
+.set-alarm-component{
+    width: 25%;
+    height: 43px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 3px solid #fff;
+    background: transparent;
+    margin: 2px;
+}
+.delete-alarm-time{
+  display: flex;
+  width: 100%;
+}
+.alarm-time{
+  width: 60%;
+    font-size: 35px;
+    font-weight: 500;
+    margin: 30px 0px;
+    color: #04f8a6;
+}
+
+.delete-alarm{
+  width: 21%;
+    height: 34px;
+    
+    margin-top: 30px;
+    background: red;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+}
+.stop-alarm{
+    display: none;
+    width: 12%;
+    height: 34px;
+    margin-top: 30px;
+    background: deepskyblue;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    margin-left: 5px;
+}
+  /* style of devices of screen size less than 768px */
+  @media only screen and (min-width: 600px) {
+    /* adding padding to container */
+    .main-container {
+      padding-block: 2rem;
+    }
+    .clock-container{
+        justify-content: center;
+        border-radius: 50px;
+        width: 450px;
+        min-height: auto;
+    }
+  }
